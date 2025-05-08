@@ -13,13 +13,9 @@ function odd(n1) {
 
 }
 
-let n1 = Number(prompt("Enter a number"));
-
-if (even(n1)) {
-    console.log(`${n1} is even.`);
-  } else if (odd(n1)) {
-    console.log(`${n1} is odd.`);
-  } else {
-    console.log("Unexpected result.");
-  }
-
+function oddOrEven () {
+    let n1 = Number(prompt("Enter a whole number:"));
+    console.log(`${n1} is even: ${even(n1)}`);
+    console.group(`${n1} is odd: ${odd(n1)}`)
+}
+oddOrEven();
